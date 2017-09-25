@@ -2,9 +2,9 @@
 const timeoutConsole = (arr) => {
 	const index = 0;
 
-	if (arr.length === 0) rej();
-
+	
 	return new Promise((res, rej) => {
+		if (arr.length === 0) rej();
 		setTimeout(() => {
 			console.log( arr[0] )
 			res( arr.slice(1) );
