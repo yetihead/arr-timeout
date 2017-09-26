@@ -16,7 +16,7 @@ const start = (arr) => {
 		if (index < arr.length)
 			return displayValue( arr[index++] ).then( goOn );
 	};
-	return goOn(0)
+	return goOn()
 }
 
 start(arr).then( () => { console.log('done') } );
