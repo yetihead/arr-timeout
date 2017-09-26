@@ -19,4 +19,4 @@ const start = (arr) => {
 	return goOn(0)
 }
 
-start(arr);
+start(arr).then( () => { console.log('done') } );
